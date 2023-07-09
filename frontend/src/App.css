@@ -1,0 +1,16 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  /*background-image: url('../public/images/background.jpg');*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Outros estilos desejados */
+}
+
+.app h1 {
+  margin-bottom: 30px;
+  color: #fff; /* Adicione uma cor de texto que contraste com o background */
+}

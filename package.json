@@ -1,0 +1,16 @@
+{
+  "name": "pesquisa-mapeamento",
+  "version": "1.0.0",
+  "description": "Aplicacao web de pesquisa e mapeamento de serviços próximos a localização  actual do cidadão",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
