@@ -5,6 +5,7 @@ function ServiceList() {
   const [searchTerm, setSearchTerm] = useState('');
   const [location, setLocation] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [userLocation, setUserLocation] = useState('');
 
   const services = [
     {
@@ -17,36 +18,6 @@ function ServiceList() {
       id: 2,
       name: 'Hotel Cardoso',
       category: 'Hotéis',
-      location: 'Maputo'
-    },
-    {
-      id: 3,
-      name: 'HCM',
-      category: 'Hospitais',
-      location: 'Maputo'
-    },
-    {
-      id: 4,
-      name: 'Total',
-      category: 'Postos de Gasolina',
-      location: 'Maputo'
-    },
-    {
-      id: 5,
-      name: 'Shoprite',
-      category: 'Supermercados',
-      location: 'Maputo'
-    },
-    {
-      id: 6,
-      name: 'Lilas',
-      category: 'Lojas de Roupas',
-      location: 'Maputo'
-    },
-    {
-      id: 7,
-      name: 'Fashion Hair',
-      category: 'Salões de Beleza',
       location: 'Maputo'
     },
     // Adicione mais serviços de exemplo aqui
@@ -74,6 +45,23 @@ function ServiceList() {
     setSelectedCategory(category);
     setSearchTerm('');
     setLocation('');
+  };
+
+  const handleLocationClick = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        position => {
+          const { latitude, longitude } = position.coords;
+          setUserLocation(`${latitude}, ${longitude}`);
+          setLocation('');
+        },
+        error => {
+          console.log(error);
+        }
+      );
+    } else {
+      alert('Geolocalização não suportada pelo seu navegador.');
+    }
   };
 
   return (
@@ -105,12 +93,16 @@ function ServiceList() {
           </div>
           <div className="location-column">
             <h2>Localização</h2>
-            <input
-              type="text"
-              placeholder="Localização"
-              value={location}
-              onChange={e => setLocation(e.target.value)}
-            />
+            <div className="location-input">
+              <input
+                type="text"
+                placeholder="Localização"
+                value={location}
+                onChange={e => setLocation(e.target.value)}
+              />
+              <button onClick={handleLocationClick}>Usar Localização Atual</button>
+            </div>
+            {userLocation && <p>Sua localização atual: {userLocation}</p>}
           </div>
         </div>
         <ul>

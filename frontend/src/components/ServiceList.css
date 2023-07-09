@@ -27,6 +27,11 @@
     font-weight: bold;
   }
   
+  .sidebar li.active {
+    font-weight: bold;
+    color: blue;
+  }
+  
   .main-content {
     flex-grow: 1;
     padding: 20px;
@@ -83,10 +88,5 @@
   
   button {
     padding: 8px 16px;
-  }
-
-  .sidebar li.active {
-    font-weight: bold;
-    color: blue;
   }
   
