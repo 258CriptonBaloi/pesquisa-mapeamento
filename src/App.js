@@ -1,14 +1,19 @@
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import './App.css';
-import ServiceList from './components/ServiceList';
+import Navbar from './components/Navbar/Navbar';
+import Contacto from './components/Navbar/Pages/Contacto';
+import Home from './components/Navbar/Pages/Home';
 
 function App() {
   return (
-    <div className="app">
-      <h1>Pesquisa e Mapeamento de Serviços</h1>
-      <ServiceList />
-    </div>
+    <Router>
+      <Navbar/>
+        <Routes>
+          <Route path='/' exact Component={Home}/>
+          <Route path='/contacto' exact Component={Contacto}/>
+        </Routes>
+    </Router>
   );
 }
 
