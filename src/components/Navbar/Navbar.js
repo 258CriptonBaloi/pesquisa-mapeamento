@@ -22,6 +22,9 @@ function Navbar() {
         <li>
           <Link to="/contacto">Contato</Link>
         </li>
+        <li>
+          <Link to="/contacto">Login</Link>
+        </li>
       </ul>
       <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div className="bar"></div>

@@ -1,0 +1,91 @@
+.contact-page {
+    padding: 20px;
+}
+  
+.contact-banner {
+    background-image: url('/public/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+  
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+  
+.contact-info,
+.contact-form {
+    margin-bottom: 40px;
+}
+  
+.contact-info h2,
+.social-media h2,
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+  
+.contact-form textarea {
+    resize: vertical;
+}
+  
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+  
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.social-media ul li {
+    margin-bottom: 5px;
+}
+  
+.social-media ul li a {
+    text-decoration: none;
+    color: #333;
+}
+  
+.social-media ul li a:hover {
+    color: #000;
+}
+  
+@media (min-width: 768px) {
+    .contact-content {
+      flex-direction: row;
+    }
+  
+    .contact-info,
+    .contact-form {
+      flex: 1;
+      margin-bottom: 0;
+    }
+  
+    .contact-form {
+      margin-left: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+}
+  
