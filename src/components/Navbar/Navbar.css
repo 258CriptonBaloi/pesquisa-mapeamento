@@ -1,54 +1,82 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px;
     background-color: #333;
     color: #fff;
-  }
-  
-  .nav-links {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 1500px;
+}
+
+.navbar-logo {
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
   
-  .nav-links li {
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+  
+.nav-links li {
     margin-left: 10px;
-  }
+}
   
-  .nav-links a {
+.nav-links a {
     color: #fff;
     text-decoration: none;
-  }
+}
   
-  .menu-icon {
+.menu-icon {
     display: none;
     cursor: pointer;
-  }
+}
   
-  .bar {
+.bar {
     width: 20px;
     height: 2px;
     background-color: #fff;
     margin-bottom: 4px;
     transition: transform 0.3s ease;
-  }
+}
   
-  .open .bar:nth-child(1) {
+.open .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
-  }
+}
   
-  .open .bar:nth-child(2) {
+.open .bar:nth-child(2) {
     opacity: 0;
-  }
+}
   
-  .open .bar:nth-child(3) {
+.open .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
-  }
+}
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .nav-links {
       display: none;
     }

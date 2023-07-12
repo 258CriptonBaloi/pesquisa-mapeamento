@@ -10,7 +10,7 @@ function Footer() {
           <p>Informações sobre a empresa e sua missão.</p>
         </div>
         <div className="footer-column">
-          <h3>Contato</h3>
+          <h3>Contacto</h3>
           <p>Entre em contato conosco por email ou telefone.</p>
         </div>
         <div className="footer-column">
