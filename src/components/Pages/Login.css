@@ -2,42 +2,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-  }
+    padding: 40px 20px 70px 20px;
+}
+
+.login-page h2{
+  font-size: 2.3rem;
+}
+
+.login-page p{
+  font-size: 1.2rem;
+}
   
-  .login-form {
+.login-form {
     display: flex;
     flex-direction: column;
     max-width: 300px;
     width: 100%;
     margin-bottom: 20px;
-  }
+}
   
-  .login-form input {
+.login-form input {
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
-  }
+}
   
-  .login-form button {
+.login-form button {
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
     border: none;
     cursor: pointer;
-  }
+    font-size: 1.3rem;
+}
   
-  .sign-up-button {
+.sign-up-button {
     padding: 10px 20px;
     background-color: #fff;
     color: #333;
     border: 1px solid #333;
     cursor: pointer;
-  }
+    font-size: 1.2rem;
+}
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .login-form {
       max-width: none;
     }
-  }
+}
   

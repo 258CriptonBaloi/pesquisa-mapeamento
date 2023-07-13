@@ -1,0 +1,41 @@
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+.label {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+  
+.select {
+    width: 200px;
+    margin-bottom: 10px;
+    width: 50%;
+    height: 40px;
+    font-size: 1.1rem;
+}
+  
+.button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+  
+@media (max-width: 600px) {
+    .search-form {
+      padding: 10px;
+    }
+    
+    .select {
+      width: 100%;
+    }
+}
+  

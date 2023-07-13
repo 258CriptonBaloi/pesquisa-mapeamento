@@ -17,12 +17,18 @@
   
   .footer-column h3 {
     margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+
+  .footer-column p{
+    font-size: 1.3rem;
   }
   
   .social-media-links {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 1.3rem;
   }
   
   .social-media-links li {
@@ -36,6 +42,7 @@
   
   .footer-bottom {
     text-align: center;
+    font-size: 1.4rem;
   }
   
   .footer-bottom p {
